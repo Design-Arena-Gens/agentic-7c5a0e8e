@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+
+.container-px { @apply px-6 md:px-10 lg:px-16; }
+.section { @apply container-px max-w-7xl mx-auto; }
+
+.btn { @apply inline-flex items-center justify-center rounded-full px-6 py-3 font-medium transition; }
+.btn-primary { @apply bg-brand text-white hover:bg-brand-light; }
+.btn-secondary { @apply bg-brand-accent text-gray-900 hover:opacity-90; }
+
+.nav-link { @apply text-sm md:text-base text-gray-700 hover:text-brand transition; }
+
+.card { @apply rounded-2xl border border-gray-200/70 shadow-sm bg-white; }
+
+.hero-gradient { background: radial-gradient(1200px 600px at 90% -10%, rgba(201,162,39,0.15), transparent), radial-gradient(800px 400px at -10% 20%, rgba(31,59,77,0.15), transparent); }
